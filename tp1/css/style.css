@@ -1,0 +1,32 @@
+h1{
+  margin: auto;
+  padding: auto;
+  text-align:center;
+  background-color: grey;
+  color:white;
+}
+
+h2{
+  padding: auto;
+  margin: auto;
+  text-align: center;
+  background-color: grey;
+  color:white;
+  width:80%;
+}
+
+.resumeFilm{
+  padding: auto;
+  margin: auto;
+  text-align: center;
+  background-color: lightgrey;
+  width:80%;
+}
+
+.caracFilm{
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  width:80%;
+  text-align: justify;
+}
