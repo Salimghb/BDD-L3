@@ -1,0 +1,24 @@
+
+h1{
+  text-align:center;
+}
+
+
+h2{
+  text-align: center;
+  background-color: #1876B0;
+  color:white;
+}
+
+.recapFilm{
+  background-color: #e5e5e5;
+  margin-top:-2%;
+}
+
+.film{
+  width:80%;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+}

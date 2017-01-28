@@ -1,0 +1,27 @@
+{% extends "layoutblog.html.twig" %}
+
+
+{% block body %}
+
+  <h1>Mon blog</h1>
+  <h2>Liste des films</h2>
+
+  <div class="caracfilm">
+    {% for film in films %}
+      <h2><b>{{film.titre}}</b> - <i>Sortie le {{film.datesortie}} - Réalisé par {{film.prenom}} {{film.nom}}</i> </h2>
+      <div class="resumeFilm">
+        <p><b>Film : </b> {{film.origine}}</p>
+        <p><b>Genre : </b> {{film.genre}}</p>
+        <p><b>Acteurs : </b>
+          {% for acteur in acteurs %}
+            {% if acteur.idFilm == film.id %}
+              {{acteur.prenom}} {{acteur.nom}},
+            {% endif %}
+          {% endfor %}...
+        </p>
+        <p><b>Résumé : </b> {{film.resume}}</p>
+        <a href="commentaire.php?idFilm={{film.id}}">Commentaires</a>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}
